@@ -1,3 +1,4 @@
+import itertools
 class PropositionalLogic:
 
     def __init__(self):
