@@ -1,5 +1,3 @@
- 
-
 def unify(x, y, subst={}):
     if x == y:
         return subst
