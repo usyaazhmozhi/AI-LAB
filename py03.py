@@ -1,3 +1,14 @@
+ 
+
+def unify(x, y, subst={}):
+    if x == y:
+        return subst
+    elif isinstance(x, str) and x.islower():
+        return {x: y}
+    elif isinstance(y, str) and y.islower():
+        return {y: x}
+    else:
+        return None
 def resolve(c1, c2):
     for lit1 in c1:
         for lit2 in c2:
